@@ -1,0 +1,22 @@
+.greyBody{
+  background-color: lightgrey;
+  padding: 10px 0px 0px 0px;
+  margin: 10px 50px 200px 50px;
+}
+h2{
+  padding:0px 0px 20px 0px;
+}
+
+.white-body{
+  background-color:white;
+  padding: 20px 50px 5px 50px;
+  margin:30px 50px 10px 50px;  
+}
+
+p{
+  padding: 5px 0px 0px 0px;
+}
+
+#small-font{
+  font-size:20px;
+}
