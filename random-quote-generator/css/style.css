@@ -1,0 +1,52 @@
+body {
+  background-image: url(http://wallpapercave.com/wp/0JydX3Y.jpg);
+  
+}
+
+h1 {
+  font-size: 70px;
+  font-family: Brush Script Std, Brush Script MT, cursive;
+}
+
+p{
+  font-size: 20px;
+  color: white;
+  font-family: "serif";
+}
+
+p2{
+  padding: 30px;
+}
+
+h3{
+  padding-top: 20px;
+}
+
+h2{
+  font-weight: bold;
+ 
+}
+button {
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  font-family: "Arial Black", Gadget, sans-serif;
+  
+}
+
+.wrapper{
+  text-align: center;
+}
+.quotes {
+  border-style: solid;
+  border-radius:25px;
+  margin: 50px;
+  height: 150px;
+  border-color: white;
+}
+
+.randquote {
+  color: white;
+  font-size: 20px;
+}
+
