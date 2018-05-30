@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+body {
+  background-image: url(http://wallpapercave.com/wp/0JydX3Y.jpg);
+}
+
+h1 {
+  margin-top: 100px;
+  font-size: 70px;
+  font-family: "Pacifico", cursive, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  font-family: "serif";
+}
+
+p2 {
+  padding: 30px;
+}
+
+button {
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+  margin: 30px;
+}
+
+.quotes {
+  margin: 40px;
+  padding-top: 20px;
+  height: 150px;
+  word-wrap: break-word;
+}
+
+.randquote {
+  color: white;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.author {
+  font-size: 25px;
+}
