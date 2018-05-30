@@ -6,20 +6,9 @@ $(document).ready(function () {
   navigator.geolocation.getCurrentPosition(success, error);
 
   function success(data) {
-    lat = data.coords.latitude;
-    long = data.coords.longitude;
-    console.log(lat);
-    console.log(long);
-    console.log("hello");
-
+    var lat = data.coords.latitude;
+    var long = data.coords.longitude;
     var url = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=81d1643f7575fbcf970e1437c1fbed80";
-
-    var oReq = new XMLHttpRequest();
-    oReq.open('GET', "http://maps.googleapis.com/maps/api/geocode/json?latlng=32.8231797,-117.15840419999998&sensor=false=AIzaSyBquCj_VVRbGXBdQ6bv_jhbfLbiD4VlZSs", true);
-    oReq.onload = function(req){
-      console.log(req.currentTarget.response);
-    }
-    oReq.send();
 
     $.ajax({
       type: 'GET',
@@ -42,7 +31,7 @@ $(document).ready(function () {
     var descriptionIndex = getWeatherDescriptionIndex(data.weather[0].main);
 
     //Weather information
-    $('#geo-status').prepend('<p>' + data.name + '</p>');
+    $('#geo-status').prepend('<p>' + data.name + ' , ' + data.sys.country + '</p>');
     $('#weather-status').prepend('<p>' + data.weather[0].description + '</p>');
     $('#wind-status').prepend('<p>' + windDirection + ' ' + data.wind.speed + ' Knots</p>');
     $("body").css('background-image', 'url("' + weatherImages[descriptionIndex] + '")');
