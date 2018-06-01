@@ -29,10 +29,12 @@ $(document).ready(function () {
     $("body").delay(1000).animate({ opacity: 1 }, 700);
     var windDirection = degToCard(data.wind.deg)
     var descriptionIndex = getWeatherDescriptionIndex(data.weather[0].main);
+    var description = data.weather[0].description;
+    var upperCaseDescription = description.charAt(0).toUpperCase() + description.substr(1);
 
     //Weather information
     $('#geo-status').prepend('<p>' + data.name + ' , ' + data.sys.country + '</p>');
-    $('#weather-status').prepend('<p>' + data.weather[0].description + '</p>');
+    $('#weather-status').prepend('<p>' + upperCaseDescription + '</p>');
     $('#wind-status').prepend('<p>' + windDirection + ' ' + data.wind.speed + ' Knots</p>');
     $("body").css('background-image', 'url("' + weatherImages[descriptionIndex] + '")');
     $('#temp-display').prepend('<img src="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png">');
